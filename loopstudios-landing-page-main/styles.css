@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* HEADER SECTION
+ */
+#header {
+  width: 100vw;
+  height: 100vh;
+  background: url("images/desktop/image-hero.jpg") no-repeat center center/cover;
+  color: white;
+  position: relative;
+}
+
+#header::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.4;
+}
+#header * {
+  z-index: 10;
+}
+#header .navbar {
+  color: white;
+  padding-top: 50px;
+  height: 8%;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navbar h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#header .navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#header .navbar ul li {
+  margin: 0 50px 0 0;
+  text-align: center;
+}
+
+#header .navbar ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#heading-container {
+  position: absolute;
+  color: white;
+  width: 40%;
+  height: 35%;
+  margin-top: 200px;
+  margin-left: 100px;
+  padding: 0 0 0 5%;
+  border: 2px white solid;
+}
+#heading-container .page-heading {
+  font-family: sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+}
+/* //////////////////////////////////////////// */
+
+/* MAIN  SECTION */
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-container {
+  width: 80%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#about-container #about-img {
+  width: 50%;
+  height: 70%;
+  background: url(images/desktop/image-interactive.jpg);
+}
+
+#about-container #about-description {
+  width: 60%;
+  height: 55%;
+  position: absolute;
+  top: 250px;
+  left: 550px;
+  z-index: 10;
+  background: white;
+}
+
+#about-container #about-description #about-header {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+#about-container #about-description #about-paragraph {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-top: 40px;
+  line-height: 1.5;
+  color: rgb(141, 148, 148);
+}
+
+/* CATEGORY section */
+#careers {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#careers #category-header {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#careers #category-header h2 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+#careers #category-header button {
+  color: black;
+  width: 130px;
+  height: 60px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background: white;
+}
+#careers #category-header button:hover {
+  color: white;
+  width: 130px;
+  height: 60px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: black;
+}
+
+#careers #category-products {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-rows: repeat(2, 6fr);
+}
+
+#product-1 {
+  background: url("images/desktop/image-deep-earth.jpg") no-repeat center
+    center/cover;
+}
+
+#product-2 {
+  background: url("images/desktop/image-night-arcade.jpg") no-repeat center
+    center/cover;
+}
+
+#product-3 {
+  background: url("images/desktop/image-soccer-team.jpg") no-repeat center
+    center/cover;
+}
+
+#product-4 {
+  background: url("images/desktop/image-grid.jpg") no-repeat center center/cover;
+}
+#product-5 {
+  background: url("images/desktop/image-from-above.jpg") no-repeat center
+    center/cover;
+}
+
+#product-6 {
+  background: url("images/desktop/image-pocket-borealis.jpg") no-repeat center
+    center/cover;
+}
+
+#product-7 {
+  background: url("images/desktop/image-curiosity.jpg") no-repeat center
+    center/cover;
+}
+
+#product-8 {
+  background: url("images/desktop/image-fisheye.jpg") no-repeat center
+    center/cover;
+}
+#category-products .product {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+}
+.product::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.4;
+}
+.product * {
+  z-index: 10;
+}
+
+.product span {
+  color: rgb(216, 214, 214);
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+
+/* FOOOTER */
+
+#footer {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  background: black;
+  margin-top: 80px;
+}
+
+#footer #footer-navbar {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#footer #footer-navbar h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+#footer #footer-navbar div ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer #footer-navbar ul li {
+  margin: 0 50px 0 0;
+  text-align: center;
+}
+
+#footer #footer-navbar ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#footer #social-media {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#footer #social-media i {
+  color: white;
+}

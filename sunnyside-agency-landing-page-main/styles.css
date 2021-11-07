@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #fff;
+  margin-left: 100px;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+li a:hover {
+  font-size: 1.5rem;
+  background-color: rgb(245, 144, 161);
+  border-radius: 15px;
+}
+
+.active {
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+
+img {
+  width: 45px;
+  height: 150px;
+  margin-bottom: 120px;
+}
+
+nav {
+  margin-right: 100px;
+}
+
+#header {
+  width: 100vw;
+  height: 75vh;
+  background: url("images/desktop/image-header.jpg") no-repeat center
+    center/cover;
+}
+
+#navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar a {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+.heading {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+#about {
+  width: 100vw;
+  height: 150vh;
+}
+
+#section1,
+#section2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.description,
+.section-img {
+  width: 50%;
+  height: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section1 #egg-img {
+  background: url("images/desktop/image-transform.jpg") no-repeat center
+    center/cover;
+}
+
+#section2 #cup-img {
+  background: url("images/desktop/image-stand-out.jpg") no-repeat center
+    center/cover;
+}
+
+#section1 .description h2,
+#section2 .description h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+#section1 .description p,
+#section2 .description p {
+  margin-right: 100px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: rgb(117, 117, 114);
+}
+
+#services {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+}
+#services .service {
+  width: 50%;
+  height: 100%;
+}
+
+#services #service1 {
+  background: url("images/desktop/image-graphic-design.jpg") no-repeat center
+    center/cover;
+}
+
+#services #service2 {
+  background: url("images/desktop/image-photography.jpg") no-repeat center
+    center/cover;
+}
+
+#services #service1,
+#services #service2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#services #service1 p,
+#services #service2 p {
+  text-align: center;
+  padding: 4%;
+  line-height: 1.2;
+  color: rgb(117, 117, 114);
+  font-weight: 600;
+}
+
+#services #service1 h3,
+#services #service2 h3 {
+  text-align: center;
+  padding: 4%;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#testimonials {
+  width: 100vw;
+  height: 100vh;
+}
+#testimonials h2 {
+  text-align: center;
+  margin-top: 60px;
+
+  color: rgb(117, 117, 114);
+  font-weight: 800;
+}
+
+#testimonials #clients {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+}
+.testimonial-img {
+  width: 150px;
+  border-radius: 50%;
+}
+.client {
+  width: 33.3%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#testimonials #clients .client p {
+  text-align: center;
+  line-height: 1.2;
+  color: rgb(122, 122, 118);
+  font-weight: 600;
+}
+#testimonials #clients .client h3 {
+  font-weight: 900;
+}
+
+#images {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-img {
+  width: 25%;
+  height: 100%;
+}
+
+#footer {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(213, 247, 213);
+}
+
+#66footer-heading {
+  line-height: 1.2;
+  font-size: 2rem;
+  color: rgb(122, 122, 118);
+  font-weight: 600;
+}
+.container {
+  width: 35%;
+  height: 15%;
+}
+
+#nav2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25%;
+  height: 10%;
+}
+
+#nav2 .nav-item a {
+  width: 70px;
+  height: 45px;
+  line-height: 1.2;
+  color: rgb(122, 122, 118);
+  font-weight: 600;
+}
